@@ -13,3 +13,10 @@ variable "countnumber" {
   type    = number
   default = 10
 }
+
+
+variable "tags" {
+  default     = {}
+  description = "A map of tags to add to all resources"
+  type        = map(string)
+}
