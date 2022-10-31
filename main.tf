@@ -17,7 +17,7 @@ resource "aws_iam_role" "ecr" {
 }
 
 resource "aws_ecr_repository" "this" {
-  name                 = join("-", [var.name, "ecr"])
+  name                 = join("-", [var.name])
   image_tag_mutability = var.image_tag_mutability
 }
 
