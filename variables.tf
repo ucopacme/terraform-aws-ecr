@@ -4,7 +4,7 @@ variable "name" {
 }
 variable "description" {
   type    = string
-  default = "keep last 10 images"
+  default = "keep last 5 images"
 }
 
 variable "image_tag_mutability" {
