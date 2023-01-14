@@ -27,7 +27,7 @@ resource "aws_ecr_lifecycle_policy" "main" {
   policy = jsonencode({
     rules = [{
       rulePriority = 1
-      description  = "keep last 10 images"
+      description  = var.description
       action = {
         type = "expire"
       }
