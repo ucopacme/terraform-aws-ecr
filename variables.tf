@@ -2,6 +2,10 @@ variable "name" {
   type    = string
   default = "ecr"
 }
+variable "description" {
+  type    = string
+  default = "keep last 10 images"
+}
 
 variable "image_tag_mutability" {
   type    = string
@@ -11,7 +15,7 @@ variable "image_tag_mutability" {
 
 variable "countnumber" {
   type    = number
-  default = 10
+  default = 5
 }
 
 
